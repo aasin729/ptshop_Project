@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+#header{ 
+    position: fixed; top: 0; left: 0; width: 100%;
+    background: #000;  z-index: 99999;
+}
+
+.row{ padding-left: 100px; padding-right: 100px; height: 90px;}
+
+#header .open{
+    display: none;
+}
+
+.row h1{
+    float: left;    
+    width: 180px;
+    line-height: 90px;  
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+   }    
+
+#nav { 
+    float: right;
+}
+
+#nav .depth1>li>img{
+    display: none;
+} 
+
+#nav .depth1>li { 
+    display:inline-block; 
+    font-size:15px; 
+    position:relative; 
+    line-height: 90px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 20px;
+    letter-spacing: 2px; 
+    transition: all 0.3s;
+}
+
+#nav .depth1 > li:hover{
+    color: #888;
+}
+
+#nav .depth2 {
+    position:absolute; top:100%; left:0;   
+    width: 200px;
+    background: #fff;
+    color: #888; 
+    line-height: 1.3em;
+    display:none;
+
+}
+
+#nav .depth1 > li:hover > .depth2{ 
+    display: block;
+    padding: 15px 15px;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 5%);
+    /* depth2 제외  */
+    display: none;
+}
+
+#nav .depth2 li a {
+    display:block;
+    padding:10px 20px; 
+}
+
+/* footer 구역 */
+#footer { 
+    height: 200px;
+    background: #333; padding: 20px 0px; 
+    color:#ddd; 
+    position: relative;
+}
+
+#footer .bottom{
+    width: 1000px;
+    margin: 0 auto;
+}
+#footer .menu .depth1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#footer .menu .depth1 li{
+    display: inline-block;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.3s;
+    font-weight: 700;
+}
+
+#footer .menu .depth1 > li:hover{
+    color: #888;
+}
+
+#footer .info1{
+    text-align: center;
+    position: absolute;
+    line-height: 2;
+}
+
+#footer .info1 h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#footer .info1 p{
+    font-size: 17px;
+}
+
+#footer .info3{
+    text-align: right;
+}
+
+#footer .info3 p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-right: 60px;
+}
+
+/* 인트로 애니메이션 스타일 */
+
+.introAni { position: fixed; top: 0; left: 0; bottom: 0; right: 0;
+    background: #fff; color: #000; font-size: 100px; text-align: center;
+    z-index: 999999999999; 
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    display: none;
+}
+
+.introAni > div > img {
+    width: 100px; height: 100px;
+}
