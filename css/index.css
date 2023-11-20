@@ -714,7 +714,7 @@ html{ scroll-behavior: smooth; font-family: 'Noto Sans KR', sans-serif;}
 
 /* 팝업창 */
 
-.popup { position:fixed; top:150px; right:400px; 
+.popup { position:fixed; top:10%; right:400px; 
    border:2px solid #000;
     z-index:999999999;
     background:#fff; padding:10px;
